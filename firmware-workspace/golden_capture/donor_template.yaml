@@ -1,0 +1,38 @@
+# Golden donor template — fill after capture (delete instructional comments if desired)
+metadata:
+  donor_name: ""
+  capture_date: ""
+  capture_host_os: ""
+  bdf: ""                 # e.g. "0000:03:00.0"
+  pci_address_short: ""   # e.g. "03:00.0"
+
+ids:
+  vendor_id: "0x____"     # 16-bit
+  device_id: "0x____"
+  subsystem_vendor_id: "0x____"
+  subsystem_id: "0x____"
+  revision_id: "0x__"
+  class_code: "0x______"  # 24-bit
+
+capabilities_summary:
+  first_capability_pointer: "0x__"
+  notes: ""
+
+bars:
+  bar0: { enabled: false, size: "", type: "", prefetch: "" }
+  bar1: { enabled: false, size: "", type: "", prefetch: "" }
+  bar2: { enabled: false, size: "", type: "", prefetch: "" }
+  bar3: { enabled: false, size: "", type: "", prefetch: "" }
+  bar4: { enabled: false, size: "", type: "", prefetch: "" }
+  bar5: { enabled: false, size: "", type: "", prefetch: "" }
+
+extended:
+  dsn_present: false
+  dsn_64bit: "0x0000000000000000"
+  other_extended_caps: ""
+
+linkspeed_notes:
+  max_speed_gen: ""
+  max_width: ""
+
+raw_dump_file: "donor_config_space.hex"

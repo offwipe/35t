@@ -1,0 +1,6 @@
+# Editor / local tooling
+.specstory/
+
+# Optional: uncomment if you copy Vivado outputs into this repo later
+# *.runs/
+# *.cache/
