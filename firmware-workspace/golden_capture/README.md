@@ -1,6 +1,6 @@
 # Golden donor capture (§RM_S05, §TEST_LADDER L2/L3)
 
-Produce artifacts **before** editing `pcileech_pcie_cfg_a7.sv` / PCIe IP for emulation targets.
+See **[GOLDEN_CAPTURE_WINDOWS11.md](GOLDEN_CAPTURE_WINDOWS11.md)** for Device Manager / Arbor / PCI-Z steps on **Windows 11**.
 
 ## Outputs (store in this folder)
 
