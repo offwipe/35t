@@ -17,7 +17,7 @@ Upstream FPGA sources live in [`ufrisk/pcileech-fpga`](https://github.com/ufrisk
 ## Hardware this project assumes
 
 - **DMA board:** CaptainDMA **4.1th-35T** (Artix-7 35T), documented vendor install/help via vendor site / Discord linked from product page.
-- **Lab PC (capture + flash/test):** documented in [firmware-workspace/SESSION_PROGRESS.md](firmware-workspace/SESSION_PROGRESS.md).
+- **Enumeration / golden capture host:** **Main PC** (see [SESSION_PROGRESS.md](firmware-workspace/SESSION_PROGRESS.md) — MSI Z390, Win10). Other PCs optional for flash convenience only.
 
 ## Ethical / lawful use
 

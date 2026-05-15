@@ -1,18 +1,26 @@
-# Golden capture on Windows 11 (step-by-step)
+# Golden capture on Windows 10 / 11 (step-by-step)
 
 **Goal:** Freeze **facts** about the PCIe device you will emulate (usually **onboard HD Audio controller**) so RTL/IP changes match reality — Drvscan-style tools compare bytes later.
 
-You do **not** need Linux on the 2nd PC if you use the tools below (Linux `lspci -xxxx` is optional).
+Prefer capture on the **same PC** where the FPGA card will enumerate after flash (user workflow: **main PC**). If you ever capture on another machine, document both and expect possible mismatch.
+
+You do **not** need Linux if you use the tools below (Linux `lspci -xxxx` is optional).
+
+---
+
+## 0 — Main PC (MSI Z390 / i5-9600K)
+
+See **[MAIN_PC_GOLDEN_CAPTURE.md](MAIN_PC_GOLDEN_CAPTURE.md)** — the “**High Definition Audio Device**” entry under *Sound* with **Microsoft** + **Internal High Definition Audio Bus** is often **not** the PCIe config-space donor; find the **Intel HD Audio PCIe controller** (commonly under **System devices**) for Arbor/PCI-Z.
 
 ---
 
 ## 1 — Identify the exact device
 
 1. **Win + X** → **Device Manager**.
-2. Expand **Sound, video and game controllers** *and* **System devices** — Intel HD Audio sometimes appears under **System devices** as **Intel® Smart Sound Technology** / **High Definition Audio Controller** (wording varies).
-3. Pick the device that matches **your onboard HD Audio PCIe function** (not USB headsets like Elgato Wave — those are different stacks).
+2. Expand **Sound, video and game controllers** *and* **System devices** — Intel HD Audio **PCIe controller** is often under **System devices** (wording varies).
+3. Pick the device that matches **your onboard HD Audio PCIe function** (not USB headsets, not unrelated virtual audio).
 
-**Rule:** One logical choice only — the PCIe function that backs motherboard audio for your GMKtec.
+**Rule:** One logical choice only — the **PCIe function** whose config space you will mirror.
 
 ---
 
