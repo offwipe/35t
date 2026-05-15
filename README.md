@@ -1,5 +1,7 @@
 # 35t — CaptainDMA / PCIe emulation workspace
 
+Published Git repository: [github.com/offwipe/35t](https://github.com/offwipe/35t)
+
 Lab notes and runbooks for **CaptainDMA 4.1th-35T** ([product page](https://captaindma.com/product/captain-dma-4-1th/)) custom emulation firmware work.
 
 Upstream FPGA sources live in [`ufrisk/pcileech-fpga`](https://github.com/ufrisk/pcileech-fpga) (clone separately); this repo tracks **documentation, golden-capture templates, and session state**.

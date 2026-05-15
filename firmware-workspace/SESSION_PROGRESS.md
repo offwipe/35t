@@ -35,7 +35,7 @@ TEST_LADDER_GATE: L?_...
 | Upstream FPGA dir | `CaptainDMA/35t484_x1` — see [WORKSPACE_RESOLUTION.md](WORKSPACE_RESOLUTION.md) |
 | Lab PC | GMKtec **N100 G3**, **Windows 11 25H2** |
 | Flash workflow on lab PC | Vendor / Zadig-style USB-JTAG per CaptainDMA docs & Discord (user-operated) |
-| Future test host | HP EliteDesk SFF G4 + Proxmox — deferred |
+| Public repo | [github.com/offwipe/35t](https://github.com/offwipe/35t) |
 
 ## Donor strategy (current)
 
